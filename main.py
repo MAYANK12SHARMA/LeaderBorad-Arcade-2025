@@ -38,7 +38,7 @@ st.markdown(
         </ul>
         <br>
         <p style='margin: 0; font-size: 16px; color: #333;font-weight: 800;'>
-        Your support means a lot to me. If possible, please consider sharing this message or the group link with others—especially fellow students—so they can also stay informed and connected.
+        Your support means a lot to me. If possible, please consider sharing this message or the group link with others in the group so they can also stay informed and connected.
         </p>
         <br><br>
     </p>
