@@ -257,7 +257,7 @@ def app():
         },
         {
             "question": "What is top priority task?",
-            "answer": "Top priority task is Arcade Badges/Games/Trivia then Skill Badges then Lab-Free Courses then Lab-Based Courses.",
+            "answer": "Top priority task is Arcade Badges/Games/Trivia then Skill Badges then Lab-Free Courses",
         },
         {
             "question": "What if I miss the deadline for Arcade Trivia and Arcade Games?",
