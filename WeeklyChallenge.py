@@ -4,6 +4,18 @@ import pandas as pd
 
 def app():
     # Weekly Challenges Heading
+    
+    st.markdown(
+        """
+        ### 📌 **Important Notes**  
+        - ✅ **Complete all the Badges, Trivia, and Games Before the deadline.**  
+        - 🎯 *Plan your daily lab completions efficiently. You can perform 15 labs per days.*  
+        - 📅 **Deadlines are strict!** Complete your tasks on time! I am not responsible of any failure** 
+        - 🏆 **To find the labs solution, Copy the lab name or Lab code (below lab name) and paste it on Youtube. (Suggested Channel : quick Lab, Cloud Hustlers, Btechy)**
+        """,
+        unsafe_allow_html=True,
+    )
+
     st.markdown(
         """
         <style>
@@ -167,17 +179,7 @@ def app():
         st.markdown(df2.to_markdown(index=False), unsafe_allow_html=True)
 
     # Important Notes Section
-    st.markdown(
-        """
-        ### 📌 **Important Notes**  
-        - ✅ **Complete all the Badges, Trivia, and Games Before the deadline.**  
-        - 🎯 *Plan your daily lab completions efficiently. You can perform 15 labs per days.*  
-        - 📅 **Deadlines are strict!** Complete your tasks on time! I am not responsible of any failure** 
-        - 🏆 **To find the labs solution, Copy the lab name or Lab code (below lab name) and paste it on Youtube. (Siggested Channel : quick Lab, Cloud Hustlers, Btechy)**
-        """,
-        unsafe_allow_html=True,
-    )
-
+    
 
 if __name__ == "__main__":
     app()

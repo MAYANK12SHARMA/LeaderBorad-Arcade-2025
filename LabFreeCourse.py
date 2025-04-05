@@ -6,7 +6,17 @@ def app():
 
     # Data extracted from the spreadsheet with hidden links
     st.markdown(
-    """
+        """
+### 📌 **Important Notes**  
+- ✅ **You have to complete at least 16 Lab Free Courses out of 18 before May 15, 2025.** 
+- 🎯 *Plan your daily lab completions efficiently.*  
+- 📅 **Deadlines are strict.** Complete your tasks on time!  
+""",
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(
+        """
     <style>
         @font-face {
             font-family: 'Poppins';
@@ -17,9 +27,8 @@ def app():
         🌟 Lab-Free Courses & Guidelines 🚀
     </h2>
     """,
-    unsafe_allow_html=True
-)
-
+        unsafe_allow_html=True,
+    )
 
     data = [
         [
@@ -122,16 +131,6 @@ def app():
         st.markdown(df[0:9].to_markdown(index=False), unsafe_allow_html=True)
     with col2:
         st.markdown(df[9:18].to_markdown(index=False), unsafe_allow_html=True)
-
-    st.markdown(
-        """
-### 📌 **Important Notes**  
-- ✅ **You have to complete at least 16 Lab Free Courses out of 18 before May 15, 2025.** 
-- 🎯 *Plan your daily lab completions efficiently.*  
-- 📅 **Deadlines are strict.** Complete your tasks on time!  
-""",
-        unsafe_allow_html=True,
-    )
 
 
 if __name__ == "__main__":

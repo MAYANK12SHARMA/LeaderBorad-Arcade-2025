@@ -229,3 +229,52 @@ def app():
     for faq in lab_based_faqs:
         with st.expander(faq["question"]):
             st.write(faq["answer"])
+
+
+    st.markdown(
+        """
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        }
+    </style>
+    <h2 style='text-align: center; font-family: Poppins, sans-serif; color: #F39C12; font-weight:600; padding: 10px;'>
+        🚀 General Question
+    </h2>
+    """,
+        unsafe_allow_html=True,
+    )
+
+    lab_based_faqs = [
+        {
+            "question": "How many lab we solve in a day?",
+            "answer": "You can solve 15 labs in a day.",
+        },
+        {
+            "question": "What if lab limit is reached?",
+            "answer": "If you reach the lab limit, you can wait for 2 hours to get a chance of 1 lab.",
+        },
+        {
+            "question": "What is top priority task?",
+            "answer": "Top priority task is Arcade Badges/Games/Trivia then Skill Badges then Lab-Free Courses then Lab-Based Courses.",
+        },
+        {
+            "question": "What if I miss the deadline for Arcade Trivia and Arcade Games?",
+            "answer": "If you miss the deadline, you will not be able to earn the badge for that week and will be left with goodies and swags for top milestone.",
+        },
+        {
+            "question": "How to check my progress?",
+            "answer" : "You can check the progress in the leaderboard. It will be updated soon on this website. Till then, you can check your progress by copy and pasting your cloud skill boost profile ID in the incognito mode.",
+        },
+        {
+            "question": "What if I am not able to solve the weekly Badges?",
+            "answer": "If you are not able to solve the weekly Badges, you have another week to solve it. But it will affect your progress as you have limit of 15 labs per day.",
+        }
+    ]
+
+    for faq in lab_based_faqs:
+        with st.expander(faq["question"]):
+            st.write(faq["answer"])
+
+    
