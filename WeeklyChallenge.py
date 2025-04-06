@@ -4,7 +4,7 @@ import pandas as pd
 
 def app():
     # Weekly Challenges Heading
-    
+
     st.markdown(
         """
         ### 📌 **Important Notes**  
@@ -81,9 +81,9 @@ def app():
         ],
         [
             "7",
-            "Automate Data Capture at Scale with Document AI",
-            "[Badge Link](https://www.cloudskillsboost.google/course_templates/674?catalog_rank=%7B%22rank%22%3A37%2C%22num_filters%22%3A1%2C%22has_search%22%3Afalse%7D)",
-            "[Solution](https://www.youtube.com/playlist?list=PL2QxKmNdTMQ5tPadaYpfGSKDVWcGQ0APX)",
+            "Get Started with Pub/Sub",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/728)",
+            "[Solution](https://www.youtube.com/watch?v=nDDIobuamAo)",
         ],
         [
             "8",
@@ -173,13 +173,13 @@ def app():
     df2 = pd.DataFrame(
         data2, columns=["S. No", "Arcade Trivia/Game", "Badge Link", "access Code"]
     )
-    
-    col1,col2,col3 = st.columns([1,3,1])
-    with col2: 
+
+    col1, col2, col3 = st.columns([1, 3, 1])
+    with col2:
         st.markdown(df2.to_markdown(index=False), unsafe_allow_html=True)
 
     # Important Notes Section
-    
+
 
 if __name__ == "__main__":
     app()
