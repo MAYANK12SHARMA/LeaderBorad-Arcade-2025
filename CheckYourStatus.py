@@ -63,3 +63,4 @@ def app():
             )
             st.subheader("🎉 Your Status")
             st.dataframe(status_df)
+
