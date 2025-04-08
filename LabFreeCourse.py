@@ -8,7 +8,7 @@ def app():
     st.markdown(
         """
 ### 📌 **Important Notes**  
-- ✅ **You have to complete at least 16 Lab Free Courses out of 18 before May 15, 2025.** 
+- ✅ **You have to complete 16 Lab Free Courses before May 15, 2025.** 
 - 🎯 *Plan your daily lab completions efficiently.*  
 - 📅 **Deadlines are strict.** Complete your tasks on time!  
 """,
@@ -110,17 +110,7 @@ def app():
             "16",
             "Machine Learning Operations (MLOps) with Vertex AI: Model Evaluation",
             "[Badge Link](https://www.cloudskillsboost.google/course_templates/1080?utm_source=gcaf-site&utm_medium=website&utm_campaign=arcade-facilitator25)",
-        ],
-        [
-            "17",
-            "Conversational AI on Vertex AI and Dialogflow CX",
-            "[Badge Link](https://www.cloudskillsboost.google/course_templates/892?utm_source=gcaf-site&utm_medium=website&utm_campaign=arcade-facilitator25)",
-        ],
-        [
-            "18",
-            "Building Complex End to End Self-Service Experiences in Dialogflow CX",
-            "[Badge Link](https://www.cloudskillsboost.google/course_templates/1103?utm_source=gcaf-site&utm_medium=website&utm_campaign=arcade-facilitator25)",
-        ],
+        ]
     ]
 
     # Convert to DataFrame
