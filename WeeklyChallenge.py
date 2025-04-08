@@ -340,7 +340,7 @@ def week2():
     
     st.success(
         """
-        **Important Information**: Badges 1, 2, 3, 4, 5, and 6 are pre-assessed badges.
+        **Important Information**: Badges 5,6,7,8,9 and 10 are pre-assessment badges.
         When you click on the badge link, you’ll see options like _**start challenge**_ or _**go to the pre-assements**_ the ones shown in the image below. 
         Just click on them—you’ll be redirected to a lab If you complete just one lab, you will be able to claim whole badges.
 
