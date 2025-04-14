@@ -4,48 +4,52 @@ import pandas as pd
 
 def app():
     # Weekly Challenges Heading
-
     st.markdown(
         """
         ### 📌 **Important Notes**  
         - ✅ **Complete all the Badges, Trivia, and Games Before the deadline.**  
-        - 🎯 *Plan your daily lab completions efficiently. You can perform 15 labs per days.*  
-        - 📅 **Deadlines are strict!** Complete your tasks on time! I am not responsible of any failure** 
-        - 🏆 **To find the labs solution, Copy the lab name or Lab code (below lab name) and paste it on Youtube. (Suggested Channel : quick Lab, Cloud Hustlers, Btechy)**
+        - 🎯 *Plan your daily lab completions efficiently. You can perform 15 labs per day.*  
+        - 📅 **Deadlines are strict!** Complete your tasks on time! I am not responsible for any failure.  
+        - 🏆 **To find the lab solutions, copy the lab name or lab code (below the lab name) and paste it on YouTube. (Suggested Channels: Quick Lab, Cloud Hustlers, Btechy)**
         """,
         unsafe_allow_html=True,
     )
 
     st.markdown(
         """
-            <style>
-                @font-face {
-                    font-family: 'Poppins';
-                    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-                }
-            </style>
-            <h2 style='text-align: center; font-family: Poppins, sans-serif; color: #E74C3C; font-weight:600; padding: 10px;'>
-                ⚡ Weekly Challenges
-            </h2>
-            """,
+        <style>
+            @font-face {
+                font-family: 'Poppins';
+                src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+            }
+        </style>
+        <h2 style='text-align: center; font-family: Poppins, sans-serif; color: #E74C3C; font-weight:600; padding: 10px;'>
+            ⚡ Weekly Challenges
+        </h2>
+        """,
         unsafe_allow_html=True,
     )
 
-    week2()
-    week1()
+    # 👇 Use Streamlit Tabs to organize Weeks
+    tabs = st.tabs(
+        [
+            "📅 Week 1: April 2 - April 8",
+            "📅 Week 2: April 9 - April 15",
+            "📅 Week 3: April 15 - April 20",
+        ]
+    )
+
+    with tabs[0]:
+        week1()
+
+    with tabs[1]:
+        week2()
+
+    with tabs[2]:
+        week3()
 
 
 def week1():
-
-    # Challenge Duration Heading
-    st.markdown(
-        """
-            <h2 style='text-align: center; font-family: Poppins, sans-serif; color: #D35400; font-weight:600; padding: 10px;'>
-                🚀 Challenge from April 2 to April 8
-            </h2>
-            """,
-        unsafe_allow_html=True,
-    )
 
     # Data for Google Cloud Badges
     data = [
@@ -190,23 +194,13 @@ def week1():
 
 def week2():
 
-    # Challenge Duration Heading
-    st.markdown(
-        """
-            <h2 style='text-align: center; font-family: Poppins, sans-serif; color: #D35400; font-weight:600; padding: 10px;'>
-                🚀 Challenge from April 9 to April 15
-            </h2>
-            """,
-        unsafe_allow_html=True,
-    )
-    
     data2 = [
         [
             "1",
             "Skills Boost Arcade Trivia April 2025 Week 2",
             "[Badge Link](https://www.cloudskillsboost.google/games/6079?utm_source=qwiklabs&utm_medium=lp&utm_campaign=arcade25-April-trivia)",
             "1q-trivia-04122",
-        ], 
+        ],
         [
             "2",
             "Level 2: Cloud Infrastructure & API Essentials",
@@ -235,7 +229,6 @@ def week2():
     col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         st.markdown(df2.to_markdown(index=False), unsafe_allow_html=True)
-
 
     # Data for Google Cloud Badges
     data = [
@@ -337,7 +330,7 @@ def week2():
     )
 
     # Display Data in Two Columns
-    
+
     st.success(
         """
         **Important Information**: Badges 5,6,7,8,9 and 10 are pre-assessment badges.
@@ -347,12 +340,12 @@ def week2():
         ✅ **Important**: Make sure to complete the lab in one go; otherwise, you won’t be able to claim the full badge.
         """
     )
-    col1,col2 = st.columns([1,1])
+    col1, col2 = st.columns([1, 1])
     with col1:
         st.image("img1.jpg", caption="Image Caption")
     with col2:
         st.image("img2.jpg", caption="Image Caption")
-    
+
     col1, col2 = st.columns(2)
     with col1:
         st.markdown(df[0:8].to_markdown(index=False), unsafe_allow_html=True)
@@ -360,6 +353,86 @@ def week2():
         st.markdown(df[8:15].to_markdown(index=False), unsafe_allow_html=True)
     col1, col2 = st.columns(2)
 
+
+def week3():
+
+    data2 = [
+        [
+            "1",
+            "Skills Boost Arcade Trivia April 2025 Week 3",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6092?utm_source=qwiklabs&utm_medium=lp&utm_campaign=arcade25-April-trivia)",
+            "1q-trivia-04066",
+        ],
+    ]
+
+    # Convert to DataFrame
+    df2 = pd.DataFrame(
+        data2, columns=["S. No", "Arcade Trivia/Game", "Badge Link", "access Code"]
+    )
+
+    col1, col2, col3 = st.columns([1, 3, 1])
+    with col2:
+        st.markdown(df2.to_markdown(index=False), unsafe_allow_html=True)
+
+    # Data for Google Cloud Badges
+    data = [
+        [
+            "2",
+            "Set Up a Google Cloud Network",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/641)",
+            "[Solution]()",
+        ],
+        [
+            "3",
+            "Store, Process, and Manage Data on Google Cloud - Console",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/658)",
+            "[Solution](https://www.youtube.com/playlist?list=PLHfVKuKwHnWOpaKFGfTSXt8NSxWS4929C)",
+        ],
+        [
+            "4",
+            "Networking Fundamentals on Google Cloud",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/748)",
+            "[Solution](https://www.youtube.com/watch?v=1GEBx0OA1do&list=PLHfVKuKwHnWNo4lXUyfKHn0l8HNYjjm_O)",
+        ],
+        [
+            "5",
+            "Integrate BigQuery Data and Google Workspace using Apps Script",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/737)",
+            "[Copy Lab Name & Paste youtube]()",
+        ],
+        [
+            "6",
+            "Create a Streaming Data Lake on Cloud Storage",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/705)",
+            "[Copy Lab Name & Paste youtube]()",
+        ],
+        [
+            "7",
+            "Get Started with Looker",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/647)",
+            "[Copy Lab Name & Paste youtube]()",
+        ],
+        [
+            "8",
+            "Implement DevOps Workflows in Google Cloud",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/716)",
+            "[Solution](https://www.youtube.com/watch?v=XjVt3kPR_gQ&list=PLHfVKuKwHnWOHWSjdrpBcjUKW5_n4c704)",
+        ],
+    ]
+
+    # Convert to DataFrame
+    df = pd.DataFrame(
+        data, columns=["S. No", "Badge Name", "Badge Link", "Solution Link"]
+    )
+
+    # Display Data in Two Columns
+
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown(df[0:4].to_markdown(index=False), unsafe_allow_html=True)
+    with col2:
+        st.markdown(df[4:].to_markdown(index=False), unsafe_allow_html=True)
+    col1, col2 = st.columns(2)
 
 
 # Important Notes Section
