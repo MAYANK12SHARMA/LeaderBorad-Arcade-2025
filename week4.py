@@ -15,11 +15,6 @@ def week4():
             "[Badge Link](https://www.cloudskillsboost.google/games/6107?utm_source=qwiklabs&utm_medium=lp&utm_campaign=special-April-arcade25)",
             "1q-cert-04092",
         ],
-        [
-            "Checked In",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6106?utm_source=qwiklabs&utm_medium=lp&utm_campaign=special-April-arcade25)",
-            "1q-worknplay-0420",
-        ],
     ]
 
     # Convert to DataFrame
