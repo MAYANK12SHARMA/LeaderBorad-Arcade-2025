@@ -105,7 +105,7 @@ def week4():
         ],
         [
             "16",
-            "Optimize Costs for Google Kubernetes Engine",
+            "Perform Predictive Data Analysis in BigQuery",
             "[Badge Link](https://www.cloudskillsboost.google/course_templates/656)",
         ],
         [
