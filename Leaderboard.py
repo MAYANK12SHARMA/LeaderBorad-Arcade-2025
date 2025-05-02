@@ -40,17 +40,17 @@ def app():
         ]
     )
 
-    # 3. Build a Styler with a hover rule
-    df["Total"] = (
-        df["# of Skill Badges Completed"]
-        + df["# of Trivia Games Completed"]
-        + df["# of Arcade Games Completed"]
-        + df["# of Lab-free Courses Completed"]
-    )
-    df["Total"] = df["Total"].astype(int)
-    df = df.sort_values(by=["Total"], ascending=False)
-    df = df.reset_index(drop=True)
-    # st.dataframe(df, use_container_width=True, height=2000, width=800)
+    # # 3. Build a Styler with a hover rule
+    # df["Total"] = (
+    #     df["# of Skill Badges Completed"]
+    #     + df["# of Trivia Games Completed"]
+    #     + df["# of Arcade Games Completed"]
+    #     + df["# of Lab-free Courses Completed"]
+    # )
+    # df["Total"] = df["Total"].astype(int)
+    # df = df.sort_values(by=["Total"], ascending=False)
+    # df = df.reset_index(drop=True)
+    # # st.dataframe(df, use_container_width=True, height=2000, width=800)
 
     # 3. Build a Styler with a hover rule
     df["Total"] = (
@@ -67,7 +67,7 @@ def app():
             return 2
         elif total >= 22 and total <= 30:
             return 8
-        elif total >= 30 and total <= 40:
+        elif total >= 30:
             return 25
         else:
             return 0
