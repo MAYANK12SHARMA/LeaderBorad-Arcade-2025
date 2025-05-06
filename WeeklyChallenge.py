@@ -3,6 +3,7 @@ from week1 import week1
 from week2 import week2
 from week3 import week3
 from week4 import week4
+from May import may
 
 
 def app():
@@ -40,6 +41,7 @@ def app():
             "📅 Task 2: April 9 - April 15",
             "📅 Task 3: April 15 - April 20",
             "📅 Task 4: April 21 - April 30",
+            "📅 May Challenges",
         ]
     )
 
@@ -51,7 +53,8 @@ def app():
         week3()
     with tabs[3]:
         week4()
-
+    with tabs[4]:
+        may()
 
 
 # Important Notes Section
