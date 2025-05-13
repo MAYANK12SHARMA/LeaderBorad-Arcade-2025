@@ -65,6 +65,6 @@ def may():
     # Convert to DataFrame
     df3 = pd.DataFrame(data3, columns=["Arcade Trivia", "Badge Link", "access Code"])
 
-    col5, col6, col7 = st.columns([2, 10, 2])
+    col5, col6, col7 = st.columns([5, 10, 2])
     with col6:
         st.markdown(df3.to_markdown(index=False), unsafe_allow_html=True)
