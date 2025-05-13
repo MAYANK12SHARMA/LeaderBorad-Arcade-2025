@@ -58,13 +58,13 @@ def may():
     # Convert to DataFrame
     df2 = pd.DataFrame(data2, columns=["Arcade Games", "Badge Link", "access Code"])
 
-    col1, col2, col3 = st.columns([2, 3, 2])
+    col1, col2, col3 = st.columns([2, 10, 2])
     with col2:
         st.markdown(df2.to_markdown(index=False), unsafe_allow_html=True)
 
     # Convert to DataFrame
-    df3 = pd.DataFrame(data3, columns=["Arcade Games", "Badge Link", "access Code"])
+    df3 = pd.DataFrame(data3, columns=["Arcade Trivia", "Badge Link", "access Code"])
 
-    col5, col6, col7 = st.columns([2, 3, 2])
+    col5, col6, col7 = st.columns([2, 10, 2])
     with col6:
         st.markdown(df3.to_markdown(index=False), unsafe_allow_html=True)
