@@ -58,7 +58,7 @@ def may():
     # Convert to DataFrame
     df2 = pd.DataFrame(data2, columns=["Arcade Games", "Badge Link", "access Code"])
 
-    col1, col2, col3 = st.columns([2, 10, 2])
+    col1, col2, col3 = st.columns([5, 10, 2])
     with col2:
         st.markdown(df2.to_markdown(index=False), unsafe_allow_html=True)
 
