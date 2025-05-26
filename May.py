@@ -26,9 +26,9 @@ def may():
             "1q-basecamp-5591",
         ],
         [
-            "Arcade NetworSkills",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6167)",
-            "1q-networskill-05192",
+            "The Arcade Certification Zone May 2025",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6189)",
+            "1q-cert-05610",
         ],
     ]
 
