@@ -37,24 +37,24 @@ def app():
     # 👇 Use Streamlit Tabs to organize Weeks
     tabs = st.tabs(
         [
-            "📅 Task 1: April 2 - April 8",
-            "📅 Task 2: April 9 - April 15",
-            "📅 Task 3: April 15 - April 20",
-            "📅 Task 4: April 21 - April 30",
-            "📅 May Challenges",
+            "📅 Task 1: August 6  - August 13",
+            # "📅 Task 2: August 14 - August 20",
+            # "📅 Task 3: August 21 - August 27",
+            # "📅 Task 4: August 28 - September 3",
+            # "📅 September Challenges",
         ]
     )
 
     with tabs[0]:
         week1()
-    with tabs[1]:
-        week2()
-    with tabs[2]:
-        week3()
-    with tabs[3]:
-        week4()
-    with tabs[4]:
-        may()
+    # with tabs[1]:
+    #     week2()
+    # with tabs[2]:
+    #     week3()
+    # with tabs[3]:
+    #     week4()
+    # with tabs[4]:
+    #     may()
 
 
 # Important Notes Section

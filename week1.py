@@ -105,30 +105,60 @@ def week1():
 
     # Display Data in Two Column
 
-    col1, col2 = st.columns(2)
-    with col1:
-        st.markdown(df[0:8].to_markdown(index=False), unsafe_allow_html=True)
+    col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.markdown(df[8:15].to_markdown(index=False), unsafe_allow_html=True)
+        st.markdown(df[0:5].to_markdown(index=False), unsafe_allow_html=True)
+    # with col2:
+    #     st.markdown(df[8:15].to_markdown(index=False), unsafe_allow_html=True)
 
     data2 = [
         [
             "16",
-            "The Arcade Base Camp April",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6059?utm_source=qwiklabs&utm_medium=lp&utm_campaign=basecamp-April-arcade25)",
-            "1q-basecamp-9932",
+            "Skills Boost Arcade Trivia August 2025 Week 1",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6397)",
+            "1q-trivia-2050",
         ],
         [
             "17",
-            "Trivia April 2025 Week 1",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6058?utm_source=qwiklabs&utm_medium=lp&utm_campaign=arcade25-April-trivia)",
-            "1q-trivia-01202",
+            "Skills Boost Arcade Trivia August 2025 Week 2",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6398)",
+            "1q-trivia-7310",
         ],
         [
             "18",
-            "Level 1: Application Development and Security with GCP",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6064?utm_source=qwiklabs&utm_medium=lp&utm_campaign=level1-April-arcade25)",
-            "1q-appdevscr-4912",
+            "Skills Boost Arcade Trivia August 2025 Week 3",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6399)",
+            "1q-trivia-2290",
+        ],
+        [
+            "19",
+            "Skills Boost Arcade Trivia August 2025 Week 4",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6400)",
+            "1q-trivia-5131",
+        ],
+        [
+            "20",
+            "Level 1: Application Design and Delivery",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6394)",
+            "1q-appdesign-0245",
+        ],
+        [
+            "21",
+            "Level 2: Building with Cloud Tools",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6395)",
+            "1q-cloudtool-3109",
+        ],
+        [
+            "22",
+            "Level 3: Terraform Essentials",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6396)",
+            "1q-terraform-0480",
+        ],
+        [
+            "23",
+            "The Arcade Base Camp August",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6393)",
+            "1q-basecamp-2930",
         ],
     ]
 
@@ -137,6 +167,11 @@ def week1():
         data2, columns=["S. No", "Arcade Trivia/Game", "Badge Link", "access Code"]
     )
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    (
+        col1,
+        col2,
+    ) = st.columns([2, 2])
     with col2:
-        st.markdown(df2.to_markdown(index=False), unsafe_allow_html=True)
+        st.markdown(df2[0:4].to_markdown(index=False), unsafe_allow_html=True)
+    with col1:
+        st.markdown(df2[4:8].to_markdown(index=False), unsafe_allow_html=True)
