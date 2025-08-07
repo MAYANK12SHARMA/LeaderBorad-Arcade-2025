@@ -6,6 +6,7 @@ import FAQ
 import YourFacilitator
 import WeeklyChallenge
 import LabFreeCourse
+import RegistrationGuide
 
 # Set page configuration
 st.set_page_config(page_title="Google Cloud Arcade Facilitator", layout="wide")
@@ -21,6 +22,7 @@ set_custom_style()
 # Create tabs for each section
 tabs = st.tabs(
     [
+        "Registration Guide",
         "Leaderboard",
         "Check Your Status",
         "Weekly Challenge",
@@ -50,19 +52,22 @@ st.markdown(
 
 
 with tabs[0]:
-    Leaderboard.app()
+    RegistrationGuide.app()
 
 with tabs[1]:
-    CheckYourStatus.app()
+    Leaderboard.app()
 
 with tabs[2]:
-    WeeklyChallenge.app()
+    CheckYourStatus.app()
 
 with tabs[3]:
-    LabFreeCourse.app()
+    WeeklyChallenge.app()
 
 with tabs[4]:
-    FAQ.app()
+    LabFreeCourse.app()
 
 with tabs[5]:
+    FAQ.app()
+
+with tabs[6]:
     YourFacilitator.app()
