@@ -20,15 +20,15 @@ def app():
     registration_faqs = [
         {
             "question": "Who is eligible to participate in the program?",
-            "answer": "You must have an email ID created on or after March 25, 2025 and be 18 years or older. If not, Please fill your age more than 18 years even if you are not 18 years old.",
+            "answer": "You must have an email ID created on or after July 31, 2025 and be 18 years or older. If not, Please fill your age more than 18 years even if you are not 18 years old.",
         },
         {
-            "question" :" Can you please share the guide to register for the program?",
-            "answer": "Sure! You can find the registration guide here: https://docs.google.com/document/d/1uLyCMyyQew45GbA_x3EmioKMscd1g_6Cfgbug1uS8Vc/edit?usp=sharing",
+            "question": " Can you please share the guide to register for the program?",
+            "answer": "Sure! You can find the registration guide here: https://docs.google.com/document/d/1gyC64WWuQQqAYXIjngKxTHa5IjmVFMaRoq17MnJ9TmA/edit?tab=t.0",
         },
         {
             "question": "How do I set up my Google Cloud Skill Boost account?",
-            "answer": "Go to the Google Cloud Skill Boost link and create your account using the same email ID you used for program participation. Check the Steps from 1 to 5 using the link https://docs.google.com/document/d/1uLyCMyyQew45GbA_x3EmioKMscd1g_6Cfgbug1uS8Vc/edit?usp=sharing.",
+            "answer": "Go to the Google Cloud Skill Boost link and create your account using the same email ID you used for program participation. Check the Steps from 1 to 5 using the link https://docs.google.com/document/d/1gyC64WWuQQqAYXIjngKxTHa5IjmVFMaRoq17MnJ9TmA/edit?tab=t.0",
         },
         {
             "question": "How do I update my profile settings on Google Cloud Skill Boost?",
@@ -40,11 +40,11 @@ def app():
         },
         {
             "question": "How do I subscribe to the Arcade program?",
-            "answer": "Visit the Arcade website, click on the 'Subscribe Here' button, and fill the form using the same email from your account created on or after March 25, 2025. Make sure to use the same email ID for both the program and Google Cloud Skill Boost account.",
+            "answer": "Visit the Arcade website, click on the 'Subscribe Here' button, and fill the form using the same email from your account created on or after July 31, 2025. Make sure to use the same email ID for both the program and Google Cloud Skill Boost account.",
         },
         {
             "question": "What information should I have ready before filling out the registration form?",
-            "answer": "You should have your Google Cloud Skill Boost profile ID, the referral code (GCAF25C1-IN-5YU-623), your correct email address, and your personal details like name, gender, country, and year of graduation.",
+            "answer": "You should have your Google Cloud Skill Boost profile ID, the referral code (GCAF25C2-IN-LWW-AM7), your correct email address, and your personal details like name, gender, country, and year of graduation.",
         },
     ]
 
@@ -74,7 +74,7 @@ def app():
         },
         {
             "question": "What is the referral code for the program?",
-            "answer": "The referral code is GCAF25C1-IN-5YU-623. Be sure to copy it exactly as shown.",
+            "answer": "The referral code is GCAF25C2-IN-LWW-AM7. Be sure to copy it exactly as shown.",
         },
         {
             "question": "What if I enter incorrect information on the form?",
@@ -132,7 +132,7 @@ def app():
         },
         {
             "question": "Where can I find the list of Lab-Free Courses?",
-            "answer": "You can find the list of Lab-Free Courses in the shared Excel sheet: https://docs.google.com/spreadsheets/d/1tsuDsrCssWUiQTHo88rvKBsYZcp4SdSOYrPU0aSYxtM/edit?usp=sharing",
+            "answer": "You can find the list of Lab-Free Courses in the shared Excel sheet: https://docs.google.com/spreadsheets/d/1tsuDsrCssWUiQTHo88rvKBsYZcp4SdSOYrPU0aSYxtM/edit?usp=sharing  or please check the Lab-Free Courses section on this website.",
         },
         {
             "question": "Why should I complete Lab-Free Courses?",
@@ -140,7 +140,7 @@ def app():
         },
         {
             "question": "When should I complete the Lab-Free Courses?",
-            "answer": "These courses should be completed as soon as possible before May 15, 2025 to ensure a ultimate MileStone.",
+            "answer": "These courses should be completed as soon as possible before August 31, 2025 to ensure a ultimate MileStone.",
         },
         {
             "question": "What happens after completing Lab-Free Courses?",
@@ -179,10 +179,6 @@ def app():
         {
             "question": "What are Lab-Based Courses?",
             "answer": "Lab-Based Courses require Google Cloud credits to complete and are a key part of the program.",
-        },
-        {
-            "question": "How do I access Lab-Based Courses?",
-            "answer": "You can find the weekly assigned lab tasks in the shared Excel sheet: https://docs.google.com/spreadsheets/d/1UmMOAM9hapd5kdTWu22kRddNg7wAkpybAWXetAjFFjA/edit?usp=sharing. In Future, you will find the tasks in that website.",
         },
         {
             "question": "What are the weekly mandatory tasks?",
@@ -230,7 +226,6 @@ def app():
         with st.expander(faq["question"]):
             st.write(faq["answer"])
 
-
     st.markdown(
         """
     <style>
@@ -265,16 +260,14 @@ def app():
         },
         {
             "question": "How to check my progress?",
-            "answer" : "You can check the progress in the leaderboard. It will be updated soon on this website. Till then, you can check your progress by copy and pasting your cloud skill boost profile ID in the incognito mode.",
+            "answer": "You can check the progress in the leaderboard. It will be updated soon on this website. Till then, you can check your progress by copy and pasting your cloud skill boost profile ID in the incognito mode.",
         },
         {
             "question": "What if I am not able to solve the weekly Badges?",
             "answer": "If you are not able to solve the weekly Badges, you have another week to solve it. But it will affect your progress as you have limit of 15 labs per day.",
-        }
+        },
     ]
 
     for faq in lab_based_faqs:
         with st.expander(faq["question"]):
             st.write(faq["answer"])
-
-    
