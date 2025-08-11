@@ -18,7 +18,6 @@ def app():
         unsafe_allow_html=True,
     )
 
-
     # 1) Upload CSV
     uploaded_file = "data.csv"
     # 2) Read & preprocess
@@ -33,11 +32,10 @@ def app():
             "# of Lab-free Courses Completed",
         ]
     ):
-        df["Total Score"] = (
-            df["# of Skill Badges Completed"]
+        df["Total Arcade points"] = (
+            (df["# of Skill Badges Completed"] // 2)
             + df["# of Trivia Games Completed"]
             + df["# of Arcade Games Completed"]
-            + df["# of Lab-free Courses Completed"]
         ).astype(int)
 
     # 3) Ask the user for their profile‑ID (or a substring of it)
