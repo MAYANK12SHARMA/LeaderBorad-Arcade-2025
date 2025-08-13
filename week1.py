@@ -102,6 +102,17 @@ def week1():
     df = pd.DataFrame(
         data, columns=["S. No", "Badge Name", "Badge Link", "Solution Link"]
     )
+    st.info(
+        """
+        🚨 **Important Message:**  
+        Please ensure you complete all badges and arcade games/levels before **20 August**. After this date, they will expire and cannot be claimed.  
+        Arcade games/levels are the highest priority—focus on them first!  
+        I am not responsible for any loss if you miss the deadline.  
+        **Complete everything before August 20 to avoid missing out!**
+        
+        ⚠️ If you leave any badges or arcade games/levels incomplete, you will not be able to claim goodies for the top milestone.
+        """
+    )
 
     # Display Data in Two Column
 
@@ -181,7 +192,12 @@ def week1():
             "Solution Link",
         ],
     )
-    (col1, col2) = st.columns([2, 2,])
+    (col1, col2) = st.columns(
+        [
+            2,
+            2,
+        ]
+    )
     with col2:
         st.markdown(df2[4:8].to_markdown(index=False), unsafe_allow_html=True)
     with col1:

@@ -38,7 +38,7 @@ def app():
     tabs = st.tabs(
         [
             "📅 Task 1: August 6  - August 13",
-            # "📅 Task 2: August 14 - August 20",
+            "📅 Task 2: August 14 - August 20",
             # "📅 Task 3: August 21 - August 27",
             # "📅 Task 4: August 28 - September 3",
             # "📅 September Challenges",
@@ -47,8 +47,8 @@ def app():
 
     with tabs[0]:
         week1()
-    # with tabs[1]:
-    #     week2()
+    with tabs[1]:
+        week2()
     # with tabs[2]:
     #     week3()
     # with tabs[3]:
