@@ -228,8 +228,8 @@ def week2():
             "S. No",
             "Arcade Games/Trivia Name",
             "Badge Link",
-            "Access Code",
             "Solution Link",
+            "Access Code",
             "expire date",
         ],
     )
