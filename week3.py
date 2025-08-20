@@ -7,15 +7,19 @@ def week3():
     data2 = [
         [
             "1",
-            "Skills Boost Arcade Trivia April 2025 Week 3",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6092?utm_source=qwiklabs&utm_medium=lp&utm_campaign=arcade25-April-trivia)",
-            "1q-trivia-04066",
+            "Work Meets Play: Faster Finance",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6434)",
+            "1q-finance-10201",
         ],
     ]
 
     # Convert to DataFrame
     df2 = pd.DataFrame(
         data2, columns=["S. No", "Arcade Trivia/Game", "Badge Link", "access Code"]
+    )
+
+    st.info(
+        "For badges where the solution link is not provided, please copy the lab name and lab code, then search on YouTube for solutions from channels like Bthecy, Quicklab, or Cloud Hustlers."
     )
 
     col1, col2, col3 = st.columns([1, 3, 1])
@@ -66,6 +70,71 @@ def week3():
             "[Badge Link](https://www.cloudskillsboost.google/course_templates/716)",
             "[Solution](https://www.youtube.com/watch?v=XjVt3kPR_gQ&list=PLHfVKuKwHnWOHWSjdrpBcjUKW5_n4c704)",
         ],
+        [
+            "9",
+            "Create and Manage Cloud Spanner Instances",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/643)",
+        ],
+        [
+            "10",
+            "Share Data Using Google Data Cloud",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/657)",
+        ],
+        [
+            "11",
+            "Build a Data Mesh with Dataplex",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/681)",
+        ],
+        [
+            "12",
+            "Build a Data Warehouse with BigQuery",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/624)",
+        ],
+        [
+            "13",
+            "Build a Website on Google Cloud",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/638)",
+        ],
+        [
+            "14",
+            "Build Infrastructure with Terraform on Google Cloud",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/636)",
+        ],
+        [
+            "15",
+            "Build LookML Objects in Looker",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/639)",
+        ],
+        [
+            "16",
+            "Create and Manage Bigtable Instances",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/650)",
+        ],
+        [
+            "17",
+            "Create and Manage Cloud Spanner Instances",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/643)",
+        ],
+        [
+            "18",
+            "Create and Manage Cloud SQL for PostgreSQL Instances",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/652)",
+        ],
+        [
+            "19",
+            "Develop Serverless Applications on Cloud Run",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/741)",
+        ],
+        [
+            "20",
+            "Engineer Data for Predictive Modeling with BigQuery ML",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/627)",
+        ],
+        [
+            "21",
+            "Migrate MySQL data to Cloud SQL using Database Migration Service",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/629)",
+        ],
     ]
 
     # Convert to DataFrame
@@ -77,7 +146,7 @@ def week3():
 
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown(df[0:4].to_markdown(index=False), unsafe_allow_html=True)
+        st.markdown(df[0:10].to_markdown(index=False), unsafe_allow_html=True)
     with col2:
-        st.markdown(df[4:].to_markdown(index=False), unsafe_allow_html=True)
+        st.markdown(df[10:].to_markdown(index=False), unsafe_allow_html=True)
     col1, col2 = st.columns(2)

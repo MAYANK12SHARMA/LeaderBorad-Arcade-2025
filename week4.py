@@ -131,3 +131,28 @@ def week4():
     with col2:
         st.markdown(df[9:].to_markdown(index=False), unsafe_allow_html=True)
     col1, col2 = st.columns(2)
+[
+            "14",
+            "Mitigate Threats and Vulnerabilities with Security Command Center",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/759)",
+        ],
+        [
+            "15",
+            "Perform Predictive Data Analysis in BigQuery",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/655)",
+        ],
+        [
+            "16",
+            "Optimize Costs for Google Kubernetes Engine",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/656)",
+        ],
+        [
+            "17",
+            "Share Data Using Google Data Cloud",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/657)",
+        ],
+        [
+            "18",
+            "Optimize Costs for Google Kubernetes Engine",
+            "[Badge Link](https://www.cloudskillsboost.google/course_templates/655)",
+        ],
