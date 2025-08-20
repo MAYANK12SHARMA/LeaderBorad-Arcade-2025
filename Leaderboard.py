@@ -54,17 +54,43 @@ def app():
         df = df.sort_values(by=["Total"], ascending=False)
 
         # Add bonus points based on specific Total values
-        def calculate_bonus(total):
-            if total >= 13 and total <= 22:
+        def calculate_bonus(row):
+            arcade_game = row["# of Arcade Games Completed"]
+            arcade_trivia = row["# of Trivia Games Completed"]
+            arcade_badge = row["# of Skill Badges Completed"]
+            lab_free_course = row["# of Lab-free Courses Completed"]
+            if (
+                (arcade_game >= 6)
+                and (arcade_trivia >= 5)
+                and (arcade_badge >= 14)
+                and (lab_free_course >= 6)
+            ):
                 return 2
-            elif total >= 22 and total <= 30:
+            elif (
+                (arcade_game >= 8)
+                and (arcade_trivia >= 6)
+                and (arcade_badge >= 28)
+                and (lab_free_course >= 12)
+            ):
                 return 8
-            elif total >= 30:
+            elif (
+                (arcade_game >= 10)
+                and (arcade_trivia >= 7)
+                and (arcade_badge >= 38)
+                and (lab_free_course >= 18)
+            ):
+                return 15
+            elif (
+                (arcade_game >= 12)
+                and (arcade_trivia >= 8)
+                and (arcade_badge >= 52)
+                and (lab_free_course >= 24)
+            ):
                 return 25
             else:
                 return 0
 
-        df["Bonus"] = df["Total"].apply(calculate_bonus)
+        df["Bonus"] = df.apply(calculate_bonus, axis=1)
         df["Final Arcade Points"] = df["Total"] + df["Bonus"]
         df = df.reset_index(drop=True)
         st.dataframe(df, use_container_width=True, height=2000, width=800)
