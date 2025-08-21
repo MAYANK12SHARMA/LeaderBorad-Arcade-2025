@@ -11,6 +11,12 @@ def week3():
             "[Badge Link](https://www.cloudskillsboost.google/games/6434)",
             "1q-finance-10201",
         ],
+        [
+            "2",
+            "Skills Boost Arcade Certification Zone August 2025",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6435)",
+            "1q-cert-10811",
+        ],
     ]
 
     # Convert to DataFrame
