@@ -4,33 +4,33 @@ import pandas as pd
 
 def week3():
 
-    data2 = [
-        [
-            "1",
-            "Work Meets Play: Faster Finance",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6434)",
-            "1q-finance-10201",
-        ],
-        [
-            "2",
-            "Skills Boost Arcade Certification Zone August 2025",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6435)",
-            "1q-cert-10811",
-        ],
-    ]
+    # data2 = [
+    #     [
+    #         "1",
+    #         "Work Meets Play: Faster Finance",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6434)",
+    #         "1q-finance-10201",
+    #     ],
+    #     [
+    #         "2",
+    #         "Skills Boost Arcade Certification Zone August 2025",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6435)",
+    #         "1q-cert-10811",
+    #     ],
+    # ]
 
-    # Convert to DataFrame
-    df2 = pd.DataFrame(
-        data2, columns=["S. No", "Arcade Trivia/Game", "Badge Link", "access Code"]
-    )
+    # # Convert to DataFrame
+    # df2 = pd.DataFrame(
+    #     data2, columns=["S. No", "Arcade Trivia/Game", "Badge Link", "access Code"]
+    # )
 
     st.info(
         "For badges where the solution link is not provided, please copy the lab name and lab code, then search on YouTube for solutions from channels like Bthecy, Quicklab, or Cloud Hustlers."
     )
 
-    col1, col2, col3 = st.columns([1, 3, 1])
-    with col2:
-        st.markdown(df2.to_markdown(index=False), unsafe_allow_html=True)
+    # col1, col2, col3 = st.columns([1, 3, 1])
+    # with col2:
+    #     st.markdown(df2.to_markdown(index=False), unsafe_allow_html=True)
 
     # Data for Google Cloud Badges
     data = [

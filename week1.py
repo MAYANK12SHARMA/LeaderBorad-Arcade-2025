@@ -122,83 +122,83 @@ def week1():
     # with col2:
     #     st.markdown(df[8:15].to_markdown(index=False), unsafe_allow_html=True)
 
-    data2 = [
-        [
-            "16",
-            "Skills Boost Arcade Trivia August 2025 Week 1",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6397)",
-            "1q-trivia-2050",
-            "[Solution Link](https://youtube.com/playlist?list=PL5aOhqv5LVIqLSjmB47rjGeeuPQLRfCIu&si=dDY5hlQc4Ndgmo8k)",
-        ],
-        [
-            "17",
-            "Skills Boost Arcade Trivia August 2025 Week 2",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6398)",
-            "1q-trivia-7310",
-            "[Solution Link](https://youtube.com/playlist?list=PL5aOhqv5LVIrkh4A7rH9wmujuACGPxGQP&si=Q6mzBnx8keRlKGyR)",
-        ],
-        [
-            "18",
-            "Skills Boost Arcade Trivia August 2025 Week 3",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6399)",
-            "1q-trivia-2290",
-            "[Solution Link](https://youtube.com/playlist?list=PL5aOhqv5LVIr-cQejoSCJrKTLUd-v2trF&si=8LhptJf8gMzFMciq)",
-        ],
-        [
-            "19",
-            "Skills Boost Arcade Trivia August 2025 Week 4",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6400)",
-            "1q-trivia-5131",
-            "[Solution Link](https://youtube.com/playlist?list=PL5aOhqv5LVIqbtKSUeYOH4YgoyL6liIxE&si=5TNn6HkER_sc2aS2)",
-        ],
-        [
-            "20",
-            "Level 1: Application Design and Delivery",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6394)",
-            "1q-appdesign-0245",
-            "[Solution Link](https://youtube.com/playlist?list=PL2QxKmNdTMQ7d45QitwIpSnN6dPvzNLLn&si=UzluLebyRwAtbxR8)",
-        ],
-        [
-            "21",
-            "Level 2: Building with Cloud Tools",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6395)",
-            "1q-cloudtool-3109",
-            "[Solution Link](https://youtube.com/playlist?list=PL2QxKmNdTMQ7MUE_2fTtAxtj1W3uFXNHk&si=jFBy8Pxdfhw2NOhu)",
-        ],
-        [
-            "22",
-            "Level 3: Terraform Essentials",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6396)",
-            "1q-terraform-0480",
-            "[Solution Link](https://youtube.com/playlist?list=PL5aOhqv5LVIq81Uk3dM48PXFGLBL8uPGm&si=TmOoNS30dP3nrsNZ)",
-        ],
-        [
-            "23",
-            "The Arcade Base Camp August",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6393)",
-            "1q-basecamp-2930",
-            "[Solution Link](https://youtube.com/playlist?list=PL2QxKmNdTMQ6O7tYNfvj7yBJaclvWmXa4&si=PrVkkzQVvcZO-Bpu)",
-        ],
-    ]
+    # data2 = [
+    #     [
+    #         "16",
+    #         "Skills Boost Arcade Trivia August 2025 Week 1",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6397)",
+    #         "1q-trivia-2050",
+    #         "[Solution Link](https://youtube.com/playlist?list=PL5aOhqv5LVIqLSjmB47rjGeeuPQLRfCIu&si=dDY5hlQc4Ndgmo8k)",
+    #     ],
+    #     [
+    #         "17",
+    #         "Skills Boost Arcade Trivia August 2025 Week 2",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6398)",
+    #         "1q-trivia-7310",
+    #         "[Solution Link](https://youtube.com/playlist?list=PL5aOhqv5LVIrkh4A7rH9wmujuACGPxGQP&si=Q6mzBnx8keRlKGyR)",
+    #     ],
+    #     [
+    #         "18",
+    #         "Skills Boost Arcade Trivia August 2025 Week 3",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6399)",
+    #         "1q-trivia-2290",
+    #         "[Solution Link](https://youtube.com/playlist?list=PL5aOhqv5LVIr-cQejoSCJrKTLUd-v2trF&si=8LhptJf8gMzFMciq)",
+    #     ],
+    #     [
+    #         "19",
+    #         "Skills Boost Arcade Trivia August 2025 Week 4",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6400)",
+    #         "1q-trivia-5131",
+    #         "[Solution Link](https://youtube.com/playlist?list=PL5aOhqv5LVIqbtKSUeYOH4YgoyL6liIxE&si=5TNn6HkER_sc2aS2)",
+    #     ],
+    #     [
+    #         "20",
+    #         "Level 1: Application Design and Delivery",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6394)",
+    #         "1q-appdesign-0245",
+    #         "[Solution Link](https://youtube.com/playlist?list=PL2QxKmNdTMQ7d45QitwIpSnN6dPvzNLLn&si=UzluLebyRwAtbxR8)",
+    #     ],
+    #     [
+    #         "21",
+    #         "Level 2: Building with Cloud Tools",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6395)",
+    #         "1q-cloudtool-3109",
+    #         "[Solution Link](https://youtube.com/playlist?list=PL2QxKmNdTMQ7MUE_2fTtAxtj1W3uFXNHk&si=jFBy8Pxdfhw2NOhu)",
+    #     ],
+    #     [
+    #         "22",
+    #         "Level 3: Terraform Essentials",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6396)",
+    #         "1q-terraform-0480",
+    #         "[Solution Link](https://youtube.com/playlist?list=PL5aOhqv5LVIq81Uk3dM48PXFGLBL8uPGm&si=TmOoNS30dP3nrsNZ)",
+    #     ],
+    #     [
+    #         "23",
+    #         "The Arcade Base Camp August",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6393)",
+    #         "1q-basecamp-2930",
+    #         "[Solution Link](https://youtube.com/playlist?list=PL2QxKmNdTMQ6O7tYNfvj7yBJaclvWmXa4&si=PrVkkzQVvcZO-Bpu)",
+    #     ],
+    # ]
 
-    # Convert to DataFrame
-    df2 = pd.DataFrame(
-        data2,
-        columns=[
-            "S. No",
-            "Arcade Trivia/Game",
-            "Badge Link",
-            "access Code",
-            "Solution Link",
-        ],
-    )
-    (col1, col2) = st.columns(
-        [
-            2,
-            2,
-        ]
-    )
-    with col2:
-        st.markdown(df2[4:8].to_markdown(index=False), unsafe_allow_html=True)
-    with col1:
-        st.markdown(df2[0:4].to_markdown(index=False), unsafe_allow_html=True)
+    # # Convert to DataFrame
+    # df2 = pd.DataFrame(
+    #     data2,
+    #     columns=[
+    #         "S. No",
+    #         "Arcade Trivia/Game",
+    #         "Badge Link",
+    #         "access Code",
+    #         "Solution Link",
+    #     ],
+    # )
+    # (col1, col2) = st.columns(
+    #     [
+    #         2,
+    #         2,
+    #     ]
+    # )
+    # with col2:
+    #     st.markdown(df2[4:8].to_markdown(index=False), unsafe_allow_html=True)
+    # with col1:
+    #     st.markdown(df2[0:4].to_markdown(index=False), unsafe_allow_html=True)

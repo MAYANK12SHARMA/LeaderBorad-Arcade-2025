@@ -42,7 +42,7 @@ def app():
             "📅 Task 1: August 6  - August 13",
             "📅 Task 2: August 14 - August 20",
             "📅 Task 3: August 21 - August 31",
-            "📅 Task 4: August 1 - September 3",
+            "📅 Task 4: September 1 - September 3",
             # "📅 September Challenges",
         ]
     )

@@ -4,37 +4,37 @@ import pandas as pd
 
 def week2():
 
-    data2 = [
-        [
-            "1",
-            "Skills Boost Arcade Trivia April 2025 Week 2",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6079?utm_source=qwiklabs&utm_medium=lp&utm_campaign=arcade25-April-trivia)",
-            "1q-trivia-04122",
-        ],
-        [
-            "2",
-            "Level 2: Cloud Infrastructure & API Essentials",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6065?utm_source=qwiklabs&utm_medium=lp&utm_campaign=level2-April-arcade25)",
-            "1q-apicap-10000",
-        ],
-        [
-            "3",
-            "Level 3: The Arcade Quiz",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6063?utm_source=qwiklabs&utm_medium=lp&utm_campaign=level3-April-arcade25)",
-            "1q-equiz-40233",
-        ],
-        [
-            "4",
-            "TechCare",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6080?utm_source=qwiklabs&utm_medium=lp&utm_campaign=special-April-arcade25)",
-            "1q-techcare-0326",
-        ],
-    ]
+    # data2 = [
+    #     [
+    #         "1",
+    #         "Skills Boost Arcade Trivia April 2025 Week 2",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6079?utm_source=qwiklabs&utm_medium=lp&utm_campaign=arcade25-April-trivia)",
+    #         "1q-trivia-04122",
+    #     ],
+    #     [
+    #         "2",
+    #         "Level 2: Cloud Infrastructure & API Essentials",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6065?utm_source=qwiklabs&utm_medium=lp&utm_campaign=level2-April-arcade25)",
+    #         "1q-apicap-10000",
+    #     ],
+    #     [
+    #         "3",
+    #         "Level 3: The Arcade Quiz",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6063?utm_source=qwiklabs&utm_medium=lp&utm_campaign=level3-April-arcade25)",
+    #         "1q-equiz-40233",
+    #     ],
+    #     [
+    #         "4",
+    #         "TechCare",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6080?utm_source=qwiklabs&utm_medium=lp&utm_campaign=special-April-arcade25)",
+    #         "1q-techcare-0326",
+    #     ],
+    # ]
 
-    # Convert to DataFrame
-    df2 = pd.DataFrame(
-        data2, columns=["S. No", "Arcade Trivia/Game", "Badge Link", "access Code"]
-    )
+    # # Convert to DataFrame
+    # df2 = pd.DataFrame(
+    #     data2, columns=["S. No", "Arcade Trivia/Game", "Badge Link", "access Code"]
+    # )
 
     # col1, col2, col3 = st.columns([1, 3, 1])
     # with col2:
@@ -211,28 +211,28 @@ def week2():
         """
     )
 
-    data2 = [
-        [
-            "1",
-            "Future Ready Skills",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6415)",
-            "https://youtube.com/playlist?list=PL2QxKmNdTMQ6aHog6TCdMyYU7i_c-ZoyH&si=vLwLkG1qcR1TOWAY",
-            "1q-futureready-0229",
-            "August 18, 2025",
-        ]
-    ]
+    # data2 = [
+    #     [
+    #         "1",
+    #         "Future Ready Skills",
+    #         "[Badge Link](https://www.cloudskillsboost.google/games/6415)",
+    #         "https://youtube.com/playlist?list=PL2QxKmNdTMQ6aHog6TCdMyYU7i_c-ZoyH&si=vLwLkG1qcR1TOWAY",
+    #         "1q-futureready-0229",
+    #         "August 18, 2025",
+    #     ]
+    # ]
 
-    df2 = pd.DataFrame(
-        data2,
-        columns=[
-            "S. No",
-            "Arcade Games/Trivia Name",
-            "Badge Link",
-            "Solution Link",
-            "Access Code",
-            "expire date",
-        ],
-    )
+    # df2 = pd.DataFrame(
+    #     data2,
+    #     columns=[
+    #         "S. No",
+    #         "Arcade Games/Trivia Name",
+    #         "Badge Link",
+    #         "Solution Link",
+    #         "Access Code",
+    #         "expire date",
+    #     ],
+    # )
 
     # Editable information box
 
@@ -257,9 +257,9 @@ def week2():
     )
 
 
-    col1, col2, col3 = st.columns([1, 12, 1])
-    with col2:
-        st.markdown(df2.to_markdown(index=False), unsafe_allow_html=True)
+    # col1, col2, col3 = st.columns([1, 12, 1])
+    # with col2:
+    #     st.markdown(df2.to_markdown(index=False), unsafe_allow_html=True)
 
     col1, col2 = st.columns(2)
     with col1:
