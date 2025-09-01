@@ -60,3 +60,70 @@ def week5():
         st.markdown(df[0:5].to_markdown(index=False), unsafe_allow_html=True)
     with col2:
         st.markdown(df[5:].to_markdown(index=False), unsafe_allow_html=True)
+
+    data3 = [
+        [
+            "1",
+            "Skills Boost Arcade Trivia September 2025 Week 1",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6462)",
+            "1q-trivia-09629",
+        ],
+        [
+            "2",
+            "Skills Boost Arcade Trivia September 2025 Week 2",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6463)",
+            "1q-trivia-06231",
+        ],
+        [
+            "3",
+            "Skills Boost Arcade Trivia September 2025 Week 3",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6364)",
+            "1q-trivia-09634",
+        ],
+        [
+            "4",
+            "Skills Boost Arcade Trivia September 2025 Week 4",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6361)",
+            "1q-trivia-09628",
+        ],
+        [
+            "5",
+            "Level 1: Cloud Infrastructure and Data Foundation",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6466)",
+            "1q-cloudinfra-0922",
+        ],
+        [
+            "6",
+            "Level 2: Building with Cloud Tools",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6467)",
+            "1q-innovation-0909",
+        ],
+        [
+            "7",
+            "Level 3: Developer Essentials",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6468)",
+            "1q-developer-09122",
+        ],
+        [
+            "8",
+            "Skills Boost Arcade Base Camp September 2025",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6465)",
+            "1q-basecamp-09302",
+        ],
+    ]
+
+    # Convert to DataFrame
+    df2 = pd.DataFrame(
+        data3,
+        columns=[
+            "S. No",
+            "Arcade Trivia/Game",
+            "Badge Link",
+            "access Code",
+        ],
+    )
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown(df2[0:4].to_markdown(index=False), unsafe_allow_html=True)
+    with col2:
+        st.markdown(df2[4:].to_markdown(index=False), unsafe_allow_html=True)
