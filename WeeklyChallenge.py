@@ -2,6 +2,8 @@ import streamlit as st
 from week1 import week1
 from week2 import week2
 from week3 import week3
+from week5 import week5
+
 # from week4 import week4
 from May import may
 
@@ -40,7 +42,7 @@ def app():
             "📅 Task 1: August 6  - August 13",
             "📅 Task 2: August 14 - August 20",
             "📅 Task 3: August 21 - August 31",
-            # "📅 Task 4: August 28 - September 3",
+            "📅 Task 4: August 1 - September 3",
             # "📅 September Challenges",
         ]
     )
@@ -51,8 +53,8 @@ def app():
         week2()
     with tabs[2]:
         week3()
-    # with tabs[3]:
-    #     week4()
+    with tabs[3]:
+        week5()
     # with tabs[4]:
     #     may()
 

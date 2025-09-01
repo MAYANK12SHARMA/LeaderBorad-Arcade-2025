@@ -111,6 +111,36 @@ def app():
             "Machine Learning Operations (MLOps) with Vertex AI: Model Evaluation",
             "[Badge Link](https://www.cloudskillsboost.google/course_templates/1080?utm_source=gcaf-site&utm_medium=website&utm_campaign=arcade-facilitator25)",
         ],
+        # [
+        #     "17",
+        #     "Infrastructure and Application Modernization with Google Cloud",
+        #     "[Badge Link](https://www.cloudskillsboost.google/course_templates/266)",
+        # ],
+        # [
+        #     "18",
+        #     "Machine Learning Operations (MLOps) with Vertex AI: Model Evaluation",
+        #     "[Badge Link](https://www.cloudskillsboost.google/course_templates/1080)",
+        # ],
+        # [
+        #     "19",
+        #     "AI Infrastructure: Introduction to AI Hypercomputer",
+        #     "[Badge Link](https://www.cloudskillsboost.google/course_templates/1404)",
+        # ],
+        # [
+        #     "20",
+        #     "Infrastructure and Application Modernization with Google Cloud",
+        #     "[Badge Link](https://www.cloudskillsboost.google/course_templates/266)",
+        # ],
+        # [
+        #     "21",
+        #     "Responsible AI: Applying AI Principles with Google Cloud",
+        #     "[Badge Link](https://www.cloudskillsboost.google/course_templates/388)",
+        # ],
+        # [
+        #     "22",
+        #     "Exploring Data Transformation with Google Cloud",
+        #     "[Badge Link](https://www.cloudskillsboost.google/course_templates/267)",
+        # ],
     ]
 
     # Convert to DataFrame
@@ -120,7 +150,7 @@ def app():
     with col1:
         st.markdown(df[0:9].to_markdown(index=False), unsafe_allow_html=True)
     with col2:
-        st.markdown(df[9:18].to_markdown(index=False), unsafe_allow_html=True)
+        st.markdown(df[9:].to_markdown(index=False), unsafe_allow_html=True)
 
 
 if __name__ == "__main__":
