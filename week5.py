@@ -77,7 +77,7 @@ def week5():
         [
             "3",
             "Skills Boost Arcade Trivia September 2025 Week 3",
-            "[Badge Link](https://www.cloudskillsboost.google/games/6364)",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6464)",
             "1q-trivia-09634",
         ],
         [
