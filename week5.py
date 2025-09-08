@@ -110,6 +110,12 @@ def week5():
             "[Badge Link](https://www.cloudskillsboost.google/games/6465)",
             "1q-basecamp-09302",
         ],
+        [
+            "8",
+            "From Notes to Hands-on!",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6482)",
+            "1q-scribble-17902",
+        ],
     ]
 
     # Convert to DataFrame
