@@ -54,14 +54,6 @@ def week6():
             "1q-genai-10091",
         ],
     ]
-
-    # Convert to DataFrame
-    df = pd.DataFrame(data2, columns=["S. No", "Arcade Trivia", "Link", " Access Code"])
-
-    col1, col2, col3 = st.columns([3, 6, 1])
-    with col2:
-        st.markdown(df[0:5].to_markdown(index=False), unsafe_allow_html=True)
-
     df1 = pd.DataFrame(
         data2, columns=["S. No", "Arcade Games", "Badge", " Access Code"]
     )
@@ -69,3 +61,11 @@ def week6():
     col1, col2, col3 = st.columns([3, 6, 1])
     with col2:
         st.markdown(df1[5:].to_markdown(index=False), unsafe_allow_html=True)
+
+
+    # Convert to DataFrame
+    df = pd.DataFrame(data2, columns=["S. No", "Arcade Trivia", "Link", " Access Code"])
+
+    col1, col2, col3 = st.columns([3, 6, 1])
+    with col2:
+        st.markdown(df[0:5].to_markdown(index=False), unsafe_allow_html=True)
