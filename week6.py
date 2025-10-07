@@ -53,6 +53,18 @@ def week6():
             "[Badge Link](https://www.cloudskillsboost.google/course_templates/6554)",
             "1q-genai-10091",
         ],
+        [
+            "9",
+            "Lights & Logics",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6571)",
+            "1q-lights-52021",
+        ],
+        [
+            "10",
+            "Diwali Dialogues",
+            "[Badge Link](https://www.cloudskillsboost.google/games/6570)",
+            "1q-diwali-102017",
+        ],
     ]
     df1 = pd.DataFrame(
         data2, columns=["S. No", "Arcade Games", "Badge", " Access Code"]
@@ -61,7 +73,6 @@ def week6():
     col1, col2, col3 = st.columns([3, 6, 1])
     with col2:
         st.markdown(df1[5:].to_markdown(index=False), unsafe_allow_html=True)
-
 
     # Convert to DataFrame
     df = pd.DataFrame(data2, columns=["S. No", "Arcade Trivia", "Link", " Access Code"])
